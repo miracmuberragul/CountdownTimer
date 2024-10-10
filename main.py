@@ -2,7 +2,7 @@ import time
 import sys
 
 def countdown_timer(seconds):
-    while seconds > 0:
+    while seconds >=  0:
         mins, secs = divmod(seconds, 60)
         timer = f'{mins:02}:{secs:02}'  # Format the time as MM:SS
         sys.stdout.write(f'\r{timer}')  # Use sys.stdout.write to overwrite the line
